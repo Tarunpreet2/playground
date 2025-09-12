@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Automation-Playground" element={<Home />} />
+        <Route path="/playground" element={<Home />} />
         <Route path="/component/modal" element={<Modal />} />
         <Route path="/component/alert" element={<Alert />} />
         <Route path="/component/dropdowns" element={<Dropdowns />} />
