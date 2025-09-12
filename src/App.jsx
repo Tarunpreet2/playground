@@ -20,9 +20,9 @@ import DragDropShadowDom from "./pages/DragDropShadowDom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/playground">
       <Routes>
-        <Route path="/playground" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/component/modal" element={<Modal />} />
         <Route path="/component/alert" element={<Alert />} />
         <Route path="/component/dropdowns" element={<Dropdowns />} />
