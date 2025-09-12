@@ -1,0 +1,14 @@
+<html></html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/playground/" />
+    <script>
+      // For React Router: redirect to root with path preserved
+      var l = window.location;
+      var pathname = l.pathname.replace(/^\/playground/, "");
+      window.location.replace('/playground/' + pathname + l.search + l.hash);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
