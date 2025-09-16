@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
+<html></html>
   <head>
-    <meta charset="utf-8" />
-    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/playground/" />
     <script>
-      // Remove repeated slashes and redirect only if not already at the correct path
-      var pathname = window.location.pathname.replace(/^\/playground/, "");
-      var cleanPath = pathname.replace(/\/+$/, ""); // Remove trailing slashes
-      var newUrl = "/playground" + cleanPath + window.location.search + window.location.hash;
-      if (window.location.pathname !== newUrl) {
-        window.location.replace(newUrl);
-      }
+      // For React Router: redirect to root with path preserved
+      var l = window.location;
+      var pathname = l.pathname.replace(/^\/playground/, "");
+      window.location.replace('/playground/' + pathname + l.search + l.hash);
     </script>
   </head>
   <body>
