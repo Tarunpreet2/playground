@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import ComponentButton from "./ComponentButton";
 import DragDropIframe from "./pages/DragDropIframe";
@@ -19,6 +19,7 @@ const components = [
   { name: "IFRAME SHADOW", path: "iframeshadow" },
   { name: "DRAG DROP IFRAME", path: "dragdropiframe" },
   { name: "DRAG DROP SHADOW DOM", path: "dragdropshadowdom" },
+  { name: "SLIDER DEMO", path: "sliderdemo" },
   // Add more components as needed
 ];
 
@@ -59,7 +60,7 @@ function Home() {
           <div className="panel">
             {components.map((component, index) => (
               <div key={index}>
-                <Link to={`/component/${component.path}`}>{component.name}</Link>
+                <a href={`/component/${component.path}`}>{component.name}</a>
               </div>
             ))}
           </div>
