@@ -20,6 +20,8 @@ const components = [
   { name: "DRAG DROP IFRAME", path: "dragdropiframe" },
   { name: "DRAG DROP SHADOW DOM", path: "dragdropshadowdom" },
   { name: "SLIDER DEMO", path: "sliderdemo" },
+  { name: "IMAGE ELEMENTS", path: "imageelements" },
+  { name: "VISUAL VALIDATION", path: "visualvalidation" },
   // Add more components as needed
 ];
 

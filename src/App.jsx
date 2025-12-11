@@ -18,6 +18,8 @@ import DragDropIframe from "./pages/DragDropIframe";
 
 import DragDropShadowDom from "./pages/DragDropShadowDom";
 import SliderDemo from "./pages/SliderDemo";
+import ImageElements from "./pages/ImageElements";
+import VisualValidation from "./pages/VisualValidation";
 // Import other components as needed
 
 function App() {
@@ -40,7 +42,9 @@ function App() {
         <Route path="/component/iframeshadow" element={<IframeShadow />} />
         <Route path="/component/dragdropiframe" element={<DragDropIframe />} />
         <Route path="/component/dragdropshadowdom" element={<DragDropShadowDom />} />
-  <Route path="/component/sliderdemo" element={<SliderDemo />} />
+        <Route path="/component/sliderdemo" element={<SliderDemo />} />
+        <Route path="/component/imageelements" element={<ImageElements />} />
+        <Route path="/component/visualvalidation" element={<VisualValidation />} />
   {/* Add more routes here */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>

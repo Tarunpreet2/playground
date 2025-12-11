@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="burst" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0%" stop-color="#f8bbd0"/>
+      <stop offset="70%" stop-color="#ec407a"/>
+      <stop offset="100%" stop-color="#ad1457"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" rx="28" fill="#311b92"/>
+  <circle cx="120" cy="120" r="84" fill="url(#burst)"/>
+  <g stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.6">
+    <path d="M80 104 H160"/>
+    <path d="M80 136 H160"/>
+    <path d="M102 88 Q120 112 138 88"/>
+    <path d="M102 152 Q120 128 138 152"/>
+  </g>
+  <circle cx="96" cy="112" r="10" fill="#ffffff"/>
+  <circle cx="144" cy="112" r="10" fill="#ffffff"/>
+</svg>
