@@ -53,6 +53,36 @@ function ImageElements() {
       <p>Images embedded into multiple HTML elements for automation practice.</p>
 
       <section className="image-section">
+        <h2>Dropdown-Controlled Image</h2>
+        <select
+          className="image-select"
+          value={selection}
+          onChange={(event) => setSelection(event.target.value)}
+          style={{
+            backgroundImage: `url(${dropdownIcon})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right 16px center",
+            backgroundSize: "12px 12px",
+          }}
+          aria-label="Choose a scene to preview"
+        >
+          {Object.entries(imageOptions).map(([value, { label }]) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
+        </select>
+        <div className="dropdown-preview">
+          <div
+            className="image-box"
+            style={{ backgroundImage: `url(${imageOptions[selection].src})` }}
+            role="img"
+            aria-label={imageOptions[selection].label}
+          />
+        </div>
+      </section>
+
+      <section className="image-section">
         <h2>Header Background Image</h2>
         <header
           className="image-header"
@@ -116,35 +146,7 @@ function ImageElements() {
         </svg>
       </section>
 
-      <section className="image-section">
-        <h2>Dropdown-Controlled Image</h2>
-        <select
-          className="image-select"
-          value={selection}
-          onChange={(event) => setSelection(event.target.value)}
-          style={{
-            backgroundImage: `url(${dropdownIcon})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right 16px center",
-            backgroundSize: "12px 12px",
-          }}
-          aria-label="Choose a scene to preview"
-        >
-          {Object.entries(imageOptions).map(([value, { label }]) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select>
-        <div className="dropdown-preview">
-          <div
-            className="image-box"
-            style={{ backgroundImage: `url(${imageOptions[selection].src})` }}
-            role="img"
-            aria-label={imageOptions[selection].label}
-          />
-        </div>
-      </section>
+    
     </div>
   );
 }
