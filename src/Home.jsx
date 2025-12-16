@@ -22,6 +22,7 @@ const components = [
   { name: "SLIDER DEMO", path: "sliderdemo" },
   { name: "IMAGE ELEMENTS", path: "imageelements" },
   { name: "VISUAL VALIDATION", path: "visualvalidation" },
+  { name: "PDF DOWNLOAD", path: "pdfdownload" },
   // Add more components as needed
 ];
 
