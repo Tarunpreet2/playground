@@ -24,7 +24,7 @@ const dropdownIcon = encodeSvg(`
 
 const imageOptions = {
   sunset: {
-    label: "Sunset Peaks",
+    label: "Sunset Mountains",
     src: sunsetRange,
   },
   aurora: {
@@ -36,7 +36,7 @@ const imageOptions = {
     src: oceanLayers,
   },
   forest: {
-    label: "Forest Peaks",
+    label: "Forest Trails",
     src: forestTrails,
   },
 };
@@ -77,7 +77,7 @@ function ImageElements() {
             className="image-box"
             style={{ backgroundImage: `url(${imageOptions[selection].src})` }}
             role="img"
-            aria-label={imageOptions[selection].label}
+            aria-label="image"
           />
         </div>
       </section>
