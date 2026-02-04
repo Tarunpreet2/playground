@@ -5,6 +5,7 @@ import ComponentButton from "./ComponentButton";
 import DragDropIframe from "./pages/DragDropIframe";
 
 const components = [
+  { name: "IMAGE ELEMENTS", path: "imageelements" },
   { name: "MODAL", path: "modal" },
   { name: "ALERT", path: "alert" },
   { name: "IFRAME", path: "iframe" },
@@ -20,7 +21,6 @@ const components = [
   { name: "DRAG DROP IFRAME", path: "dragdropiframe" },
   { name: "DRAG DROP SHADOW DOM", path: "dragdropshadowdom" },
   { name: "SLIDER DEMO", path: "sliderdemo" },
-  { name: "IMAGE ELEMENTS", path: "imageelements" },
   { name: "VISUAL VALIDATION", path: "visualvalidation" },
   { name: "PDF DOWNLOAD", path: "pdfdownload" },
   // Add more components as needed
