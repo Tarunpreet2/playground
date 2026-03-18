@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import ComponentButton from "./ComponentButton";
-import DragDropIframe from "./pages/DragDropIframe";
 
 const components = [
   { name: "IMAGE ELEMENTS", path: "imageelements" },
@@ -23,6 +22,8 @@ const components = [
   { name: "SLIDER DEMO", path: "sliderdemo" },
   { name: "VISUAL VALIDATION", path: "visualvalidation" },
   { name: "PDF DOWNLOAD", path: "pdfdownload" },
+  { name: "SIMILAR ELEMENTS", path: "similarelements" },
+  { name: "ACCESSIBILITY TEST", path: "accessibilitytest" },
   // Add more components as needed
 ];
 
