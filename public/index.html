@@ -2,6 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      // Decode GitHub Pages SPA fallback redirect from 404.html
+      (function () {
+        var l = window.location;
+        if (l.search && l.search.indexOf("?/") === 0) {
+          var decoded = l.search
+            .slice(2)
+            .replace(/~and~/g, "&");
+          var newUrl = l.pathname + decoded + l.hash;
+          window.history.replaceState(null, null, newUrl);
+        }
+      })();
+    </script>
     <link rel="icon" href="%PUBLIC_URL%/coding.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import ComponentButton from "./ComponentButton";
 
@@ -64,7 +64,7 @@ function Home() {
           <div className="panel">
             {components.map((component, index) => (
               <div key={index}>
-                <a href={`/component/${component.path}`}>{component.name}</a>
+                <Link to={`/component/${component.path}`}>{component.name}</Link>
               </div>
             ))}
           </div>
