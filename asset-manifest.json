@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/playground/static/css/main.cd40e633.css",
-    "main.js": "/playground/static/js/main.fa998f25.js",
+    "main.js": "/playground/static/js/main.78b63c14.js",
     "static/js/453.1a9a0342.chunk.js": "/playground/static/js/453.1a9a0342.chunk.js",
+    "index.html": "/playground/index.html",
     "static/media/header-art.svg": "/playground/static/media/header-art.f96d577fe9ebb905360415cb5ef1c4ed.svg",
     "static/media/indigo-pattern.svg": "/playground/static/media/indigo-pattern.f62f55ac64f6a6b2845c1419dabffb12.svg",
     "static/media/aurora-horizon.svg": "/playground/static/media/aurora-horizon.fd9e81cd3a4084c0008025d945c4f041.svg",
     "static/media/forest-trails.svg": "/playground/static/media/forest-trails.879271f8a84d622abc0493fe73e3a38d.svg",
     "static/media/radiant-emblem.svg": "/playground/static/media/radiant-emblem.7d6cf545e98eb4a80b2e92a35d7d7280.svg",
     "static/media/ocean-layers.svg": "/playground/static/media/ocean-layers.f8c0beffd826431fac045c083dbb4117.svg",
-    "index.html": "/playground/index.html",
     "static/media/sunset-range.svg": "/playground/static/media/sunset-range.63014a7cb2699117e5f818c0cbc29eec.svg",
     "main.cd40e633.css.map": "/playground/static/css/main.cd40e633.css.map",
-    "main.fa998f25.js.map": "/playground/static/js/main.fa998f25.js.map",
+    "main.78b63c14.js.map": "/playground/static/js/main.78b63c14.js.map",
     "453.1a9a0342.chunk.js.map": "/playground/static/js/453.1a9a0342.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd40e633.css",
-    "static/js/main.fa998f25.js"
+    "static/js/main.78b63c14.js"
   ]
 }
