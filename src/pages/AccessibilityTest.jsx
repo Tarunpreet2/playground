@@ -27,7 +27,7 @@ function AccessibilityTest() {
       </p>
 
       {/* Form controls without associated labels */}
-      <div style={{ marginTop: "20px", display: "grid", gap: "10px", maxWidth: "420px" }}>
+      <div id="email-input" style={{ marginTop: "20px", display: "grid", gap: "10px", maxWidth: "420px" }}>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <select defaultValue="">
