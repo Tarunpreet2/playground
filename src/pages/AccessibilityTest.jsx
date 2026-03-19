@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import BackButton from "../components/BackButton";
 
 function AccessibilityTest() {
+  const shadowHostRef = useRef(null);
+
+  useEffect(() => {
+    if (!shadowHostRef.current || shadowHostRef.current.shadowRoot) {
+      return;
+    }
+
+    const shadowRoot = shadowHostRef.current.attachShadow({ mode: "open" });
+    shadowRoot.innerHTML = `
+      <style>
+        .box {
+          border: 1px solid #999;
+          padding: 10px;
+          margin-top: 8px;
+          font-family: Arial, sans-serif;
+        }
+        .low {
+          color: #b6b6b6;
+          background: #c3c3c3;
+          padding: 4px;
+        }
+      </style>
+      <div class="box">
+        <h4>Shadow Root Content</h4>
+        <p class="low">Low contrast content inside shadow DOM.</p>
+        <input type="text" placeholder="No label in shadow root" />
+        <div tabindex="4" role="button">Focusable fake button in shadow</div>
+      </div>
+    `;
+  }, []);
+
   return (
     <div style={{ padding: "24px" }}>
       <BackButton />
@@ -181,6 +212,37 @@ function AccessibilityTest() {
         </label>
         <input type="text" placeholder="123-456-7890" />
         <p style={{ color: "#777" }}>Fields with * are required.</p>
+      </div>
+
+      {/* Iframe accessibility issues */}
+      <div id="iframe-issues-section" style={{ marginTop: "30px", marginBottom: "20px" }}>
+        <h3>Iframe Accessibility Issues</h3>
+        <p>Iframe below intentionally has missing/weak accessibility metadata.</p>
+        {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
+        <iframe
+          id="accessibility-issues-iframe"
+          srcDoc={`
+            <html>
+              <body style="font-family: Arial, sans-serif;">
+                <h2>Iframe Test Content</h2>
+                <p style="color:#b7b7b7;background:#c2c2c2;">Low contrast inside iframe.</p>
+                <input type="text" placeholder="Unlabeled input in iframe" />
+                <a href="#">click here</a>
+              </body>
+            </html>
+          `}
+          style={{ width: "100%", maxWidth: "640px", height: "200px", border: "1px solid #ccc" }}
+        />
+      </div>
+
+      {/* Shadow DOM accessibility issues */}
+      <div id="shadow-dom-issues-section" style={{ marginTop: "30px", marginBottom: "20px" }}>
+        <h3>Shadow DOM Accessibility Issues</h3>
+        <p>
+          Host element below renders intentionally problematic content inside an open
+          shadow root.
+        </p>
+        <div id="shadow-dom-host" ref={shadowHostRef} style={{ border: "1px dashed #999", padding: "8px" }} />
       </div>
     </div>
   );
