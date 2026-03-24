@@ -5,6 +5,7 @@ function Looping() {
   const [count, setCount] = useState(0);
   const [randomNumber, setRandomNumber] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showGenerate, setShowGenerate] = useState(true);
   const totalPages = 10;
 
   return (
@@ -57,10 +58,21 @@ function Looping() {
           <h2>Random number generator</h2>
           <button
             className="component-button"
-            style={{ padding: "10px 20px", fontSize: "16px" }}
+            style={{
+              padding: "10px 20px",
+              fontSize: "16px",
+              display: showGenerate ? undefined : "none"
+            }}
             onClick={() => setRandomNumber(Math.floor(Math.random() * 100))}
           >
             GENERATE
+          </button>
+          <button
+            className="component-button"
+            style={{ marginLeft: "10px", padding: "10px 20px", fontSize: "16px" }}
+            onClick={() => setShowGenerate((prev) => !prev)}
+          >
+            {showGenerate ? "Hide" : "Show"} Generate
           </button>
           <br />
           <br />
