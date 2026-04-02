@@ -24,6 +24,7 @@ const components = [
   { name: "PDF DOWNLOAD", path: "pdfdownload" },
   { name: "SIMILAR ELEMENTS", path: "similarelements" },
   { name: "ACCESSIBILITY TEST", path: "accessibilitytest" },
+  { name: "EMAIL VERIFICATION", path: "emailverification" },
   // Add more components as needed
 ];
 

@@ -23,6 +23,7 @@ import VisualValidation from "./pages/VisualValidation";
 import PdfDownload from "./pages/PdfDownload";
 import SimilarElementsPage from "./pages/SimilarElementsPage";
 import AccessibilityTest from "./pages/AccessibilityTest";
+import EmailVerification from "./pages/EmailVerification";
 // Import other components as needed
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/component/pdfdownload" element={<PdfDownload />} />
         <Route path="/component/similarelements" element={<SimilarElementsPage />} />
         <Route path="/component/accessibilitytest" element={<AccessibilityTest />} />
+        <Route path="/component/emailverification" element={<EmailVerification />} />
   {/* Add more routes here */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
