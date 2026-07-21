@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/playground/static/css/main.5a952957.css",
-    "main.js": "/playground/static/js/main.082969c9.js",
+    "main.css": "/playground/static/css/main.32959b29.css",
+    "main.js": "/playground/static/js/main.1c7f4cd1.js",
     "static/js/453.1a9a0342.chunk.js": "/playground/static/js/453.1a9a0342.chunk.js",
     "index.html": "/playground/index.html",
     "static/media/header-art.svg": "/playground/static/media/header-art.f96d577fe9ebb905360415cb5ef1c4ed.svg",
@@ -11,12 +11,12 @@
     "static/media/radiant-emblem.svg": "/playground/static/media/radiant-emblem.7d6cf545e98eb4a80b2e92a35d7d7280.svg",
     "static/media/ocean-layers.svg": "/playground/static/media/ocean-layers.f8c0beffd826431fac045c083dbb4117.svg",
     "static/media/sunset-range.svg": "/playground/static/media/sunset-range.63014a7cb2699117e5f818c0cbc29eec.svg",
-    "main.5a952957.css.map": "/playground/static/css/main.5a952957.css.map",
-    "main.082969c9.js.map": "/playground/static/js/main.082969c9.js.map",
+    "main.32959b29.css.map": "/playground/static/css/main.32959b29.css.map",
+    "main.1c7f4cd1.js.map": "/playground/static/js/main.1c7f4cd1.js.map",
     "453.1a9a0342.chunk.js.map": "/playground/static/js/453.1a9a0342.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a952957.css",
-    "static/js/main.082969c9.js"
+    "static/css/main.32959b29.css",
+    "static/js/main.1c7f4cd1.js"
   ]
 }
